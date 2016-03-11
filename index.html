@@ -1,5 +1,48 @@
 <html>
-<body onload="load()" bgcolor=#8ec6ff>
+<body onload="load()" bgcolor="#8ec6ff" style="
+    color: #194A16;
+">
+  <center> <p id="money" style="display:inline">0.0</p><p id="mps" style="display:inline">+0</p><br><br><br>
+  <input type="button" id="clickbutton" value="1$" onclick="clicked()"><br><br><br>
+  </center>
+  <h1>Buildings:</h1>
+ <table>
+  <tbody><tr>
+  <td><input type="button" id="clickbutton1" value="building 1" onclick="buy(0)" disabled=""></td>
+  <td> <p id="building1price" style="display:inline">5.0&nbsp;&nbsp;	</p></td>
+  <td><p id="building1count" style="display:inline">0</p><br></td>
+  </tr>
+  <tr>
+  <td><input type="button" id="clickbutton2" value="building 2" onclick="buy(1)" disabled=""></td>
+  <td><p id="building2price" style="display:inline">10.0&nbsp;&nbsp;	</p></td>
+  <td><p id="building2count" style="display:inline">0</p><br></td>
+  </tr>
+  <tr>
+  <td><input type="button" id="clickbutton3" value="building 3" onclick="buy(2)" disabled=""></td>
+  <td><p id="building3price" style="display:inline">15.0&nbsp;&nbsp;	</p></td>
+  <td><p id="building3count" style="display:inline">0</p><br></td>
+  </tr>
+  <tr>
+  <td><input type="button" id="clickbutton4" value="building 4" onclick="buy(3)" disabled=""></td>
+  <td><p id="building4price" style="display:inline">20.0&nbsp;&nbsp;	</p></td>
+  <td><p id="building4count" style="display:inline">0</p><br></td>
+  </tr>
+  </tbody></table>
+  <h1>Upgrades:</h1>
+  <table>
+  <tbody><tr>
+  <td>Clicking</td>
+  <td> <input type="button" value="1" onclick="upgrade(0,1)" title="1000"></td>
+  <td> <input type="button" value="2" onclick="upgrade(0,2)" title="1000"></td>
+  <td> <input type="button" value="3" onclick="upgrade(0,3)" title="1000"></td>
+  <td> <input type="button" value="4" onclick="upgrade(0,4)" title="1000"></td>
+  <td> <input type="button" value="5" onclick="upgrade(0,5)" title="1000"></td>
+  </tr>
+  </tbody></table>
+  <input type="button" id="stats" value="stats" onclick="stats()"><br>
+  <input type="button" id="resetbutton" value="reset" onclick="reset()"><br>
+  
+  <p id="debug">2</p></body>
   <center> <p id="money" style="display:inline">0 </p><p id="mps" style="display:inline">&nbsp;&nbsp;	+0</p><br><br><br>
   <input type="button" id="clickbutton" value="1$" onclick="clicked()" onclick="myFunctions()" style="
     border-top-width: 6px;
