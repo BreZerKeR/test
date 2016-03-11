@@ -1,7 +1,7 @@
 <html>
 <body onload="load()" bgcolor=#8ec6ff>
   <center> <p id="money" style="display:inline">0 </p><p id="mps" style="display:inline">&nbsp;&nbsp;	+0</p><br><br><br>
-  <input type="button" id="clickbutton" value="1$" onclick="clicked()" style="
+  <input type="button" id="clickbutton" value="1$" onclick="clicked()" onclick="myFunctions()" style="
     border-top-width: 6px;
     padding-top: 20px;
     padding-right: 20px;
@@ -41,6 +41,10 @@ var clicks;
 var mpst;
 var buildings;
 var buildingcount=4;
+function myFunctions() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('img_tree.png')";
+}
 
 var Building = function(name, price,mps,count) {
     this.name = name;
